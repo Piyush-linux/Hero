@@ -1,0 +1,74 @@
+@mixin laptop(){
+	@media screen and (max-width:750px ) {
+		@content;
+	}
+}
+@mixin tablet(){
+	@media screen and (max-width:400px ) {
+		@content;
+	}
+}
+@mixin mobile(){
+	@media screen and (max-width:400px ) {
+		@content;
+	}
+}
+
+.banner{
+	position: absolute;
+	width:100vw;
+	height: 100vh;
+	background: linear-gradient(rgba(189, 195, 199, 0.2), rgba(189, 195, 199, 0.2)), url('../bg.jpg') no-repeat center / cover;
+}
+.navbar {
+	background-color: transparent;
+
+    &-brand {
+        .iconify {
+            font-size: 3rem;
+            color: white;
+            @include laptop{
+            	font-size: 2rem;
+            }
+        }
+    }
+    &-burger{
+    	span{
+    		color:white;
+    	}
+    }
+    &-end {
+        a {
+            font-weight: bold;
+            color:white;
+        }
+    }
+}
+.hero{
+	background-color:transparent;
+	text-align: right;
+	.title,.subtitle,.content{
+		color:white;
+	}
+	.title{
+		font-size: 3rem;
+		@include laptop{
+				font-size: 2rem;
+		}
+	}
+	.subtitle{
+		font-size: 2.7rem;
+		@include laptop{
+				font-size: 1.5rem;
+		}
+	}
+	.content{
+		font-size: 1rem;
+		max-width: 55%;
+		float: right;
+		@include laptop{
+				font-size: 1rem;
+				max-width:70%;
+		}
+	}
+}

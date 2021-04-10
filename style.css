@@ -1,0 +1,45 @@
+.banner {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(189, 195, 199, 0.2), rgba(189, 195, 199, 0.2)), url("../bg.jpg") no-repeat center/cover; }
+
+.navbar {
+  background-color: transparent; }
+  .navbar-brand .iconify {
+    font-size: 3rem;
+    color: white; }
+    @media screen and (max-width: 750px) {
+      .navbar-brand .iconify {
+        font-size: 2rem; } }
+  .navbar-burger span {
+    color: white; }
+  .navbar-end a {
+    font-weight: bold;
+    color: white; }
+
+.hero {
+  background-color: transparent;
+  text-align: right; }
+  .hero .title, .hero .subtitle, .hero .content {
+    color: white; }
+  .hero .title {
+    font-size: 3rem; }
+    @media screen and (max-width: 750px) {
+      .hero .title {
+        font-size: 2rem; } }
+  .hero .subtitle {
+    font-size: 2.7rem; }
+    @media screen and (max-width: 750px) {
+      .hero .subtitle {
+        font-size: 1.5rem; } }
+  .hero .content {
+    font-size: 1rem;
+    max-width: 55%;
+    float: right; }
+    @media screen and (max-width: 750px) {
+      .hero .content {
+        font-size: 1rem;
+        max-width: 70%; } }
+
+/*# sourceMappingURL=style.css.map */
